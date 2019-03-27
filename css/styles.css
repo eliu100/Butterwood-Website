@@ -1,0 +1,318 @@
+body {
+    font-family: 'Roboto', 'Open Sans', sans-serif;
+    font-size: 100%;
+    line-height: 1.7em;
+    background-color: #ffcc99;
+    color: #58290c;
+}
+
+#content {
+    background-color: #f1bb99;
+}
+
+#top-row {
+    border-bottom: 1px solid #000000;
+    padding: 11em .5em 3em .5em;
+    margin: auto;
+    top: 0;
+    width: 100%;
+    text-align: center;
+}
+
+
+#top-row img {
+    width: 297px;
+    height: 244.5px;
+    display: block;
+    margin-top: -190px;
+    padding: 0;
+}
+
+.norm {
+    text-align: center;
+    margin: 0 auto;
+    width: 800px;
+    padding: 12px;
+    list-style: none;
+}
+
+.norm li {
+    float: left;
+    margin-left: 1px;
+    margin-right: 1px;
+}
+
+.norm a {
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 10px;
+    width: fit-content;
+    display: inline-block;
+    font-size: 1.25em;
+    font-weight: 400;
+    padding: 15px;
+    color: #580c3b;
+}
+
+#top-row a.selected{
+    text-decoration: underline;
+    text-decoration-color: #0c5829;
+}
+
+#top-row a:hover {
+    text-decoration: underline;
+    text-decoration-color: #0c5829;
+}
+
+.mobile {
+    display: none;
+}
+
+footer {
+    clear: both;
+    margin: auto;
+    padding: .5em;
+    color: #333333;
+    font-variant: small-caps;
+    font-size: .9em;
+    text-align: center;
+}
+
+footer h3 {
+    color: #580c3b;
+}
+
+footer img {
+    width: 30px;
+    height: 30px;
+}
+
+#contact-group {
+    float: left;
+    padding-bottom: 37.5px;
+    padding-left: 175px;
+    padding-right: 175px;
+    border-right: solid #000000;
+}
+
+#social-media-group {
+    float: left;
+    padding-bottom: 52.5px;
+    padding-left: 175px;
+    padding-right: 175px;
+    border-right: solid #000000;
+}
+
+#address-group {
+    float: left;
+    padding-bottom: 10px;
+    padding-left: 175px;
+    padding-right: 175px;
+    border-right: solid #000000;
+}
+
+#hours-group {
+    float: left;
+    padding-bottom: 9px;
+    padding-left: 175px;
+}
+
+#left {
+    background-color: #f1bb99;
+    float: left;
+    width: 67%;
+    border-right: solid #000000;
+    padding-right: 5px;
+}
+
+#left h3 {
+    font-size: 35px;
+    margin: 30px 0 30px 0;
+    font-weight: normal;
+    color: #580c3b;
+}
+
+#about-info p {
+    text-align: center;
+    margin: 100px;
+    font-size: 26px;
+}
+
+#about-info {
+    border-bottom: 1px solid #000000;
+}
+
+#news ul {
+    margin-left: 100px;
+    margin-top: 35px;
+    font-size: 26px;
+    margin-bottom: 60px;
+}
+
+#news li {
+    margin-bottom: 36px;
+}
+
+#news a {
+    text-decoration: none;
+    color: #58290c;
+}
+
+#news a:hover {
+    text-decoration: underline;
+    text-decoration-color: #0c5829;
+}
+
+#news iframe {
+    margin-left: 125px;
+    padding-bottom: 10px;
+}
+
+#gallery {
+    background-color: #f1bb99;
+    padding-bottom: 40px;
+}
+
+#gallery table img {
+    margin-bottom: 100px;
+}
+
+#tabs .ui-tabs-nav {
+    height: 2.35em;
+    text-align: center;
+    background-color: #580c3b;
+    padding: 50px;
+    padding-bottom: 70px;
+}
+
+#tabs .ui-tabs-nav li {
+    font-size: 28px;
+    display: inline-block;
+    float: none;
+    margin-left: 198px;
+    margin-right: 198px;
+}
+
+#tabs .ui-tabs-panel{
+    color: #58290c;
+    background-color: #f1bb99;
+}
+
+#heading h3{
+    font-size: 35px;
+    margin: 30px 0 30px 0;
+    font-weight: normal;
+    color: #580c3b;
+}
+
+#pars {
+    padding-right:8px;
+    float: left;
+    width: 71%;
+}
+
+#pars p {
+    padding-bottom: 0;
+    margin: auto;
+    margin-left: 3em;
+    font-size: .875em;
+}
+
+#pars h4 {
+    margin-bottom: 18px;
+    margin-top: 18px;
+}
+
+#cake-pic figcaption {
+    float: right;
+}
+
+#visit {
+    background-color: #f1bb99;
+    margin: auto;
+    float: left;
+    width: 50%;
+    border-right: solid #000000;
+    text-align: center;
+}
+
+#visit table {
+    padding-right: 10px;
+}
+
+#visit h3 {
+    font-size: 35px;
+    margin: 30px 0 30px 0;
+    font-weight: normal;
+    color: #580c3b;
+}
+
+#visit td {
+    padding: 10px;
+}
+
+#visit img {
+    width: 353.5px;
+    height: 443.5px;
+}
+
+#contact h3 {
+    font-size: 35px;
+    margin: 30px 0 30px 0;
+    font-weight: normal;
+    color: #580c3b;
+}
+
+#contact {
+    background-color: #f1bb99;
+    width: 49%;
+    float: left;
+    font-size: 18px;
+    text-align: center;
+    padding-right: 14px;
+    padding-bottom: 34px;
+}
+
+#contact input {
+    margin: 30px;
+}
+
+#contact textarea {
+    margin: 30px;
+}
+
+.button {
+    background-color: #0c5829;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+}
+
+#order {
+    text-align: center;
+}
+
+#order h3 {
+    font-size: 35px;
+    margin: 30px 0 30px 0;
+    font-weight: normal;
+    color: #580c3b;
+}
+
+#order table{
+    width: 100%;
+}
+
+#order td {
+    padding: 10px;
+}
+
+#order table tr:nth-child(1) td {
+    width: 33%;
+}
+
+#order fieldset {
+    height: 70%;
+}

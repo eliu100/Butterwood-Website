@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+        <link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
+        <link rel="stylesheet" media="screen and (max-width: 480px)" type="text/css" href="css/stylesmobile.css" />
+
+        <script type="text/javascript" src="js/jquery-3.3.1.min.js" ></script>
+        <script type="text/javascript" src="js/script.js" ></script>
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+        <script>
+            $(function() {
+                $('#weekday-graph').highcharts({
+                    chart: {
+                        type: 'column'
+                    },
+                    title: {
+                        text: 'Visitors per Hour on Weekdays'
+                    },
+                    xAxis: {
+                        categories: [
+                            '12 PM',
+                            '1 PM',
+                            '2 PM',
+                            '3 PM',
+                            '4 PM',
+                            '5 PM',
+                            '6 PM',
+                            '7 PM',
+                            '8 PM',
+                            '9 PM',
+                            '10 PM',
+                            '11 PM'
+                        ],
+                        crosshair: true,
+                        title: {
+                            text: 'Time of Day'
+                        }
+                    },
+                    yAxis: {
+                        min: 0,
+                        title: {
+                            text: 'Amount of People'
+                        }
+                    },
+                    tooltip: {
+                        headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                        pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                        '<td style="padding:0"><b>{point.y:.1f} people (on average) </b></td></tr>',
+                        footerFormat: '</table>',
+                        shared: true,
+                        useHTML: true
+                    },
+                    legend: {
+                        enabled: false  
+                    },
+                    plotOptions: {
+                        column: {
+                            pointPadding: 0.2,
+                            borderWidth: 0
+                        }
+                    },
+                    series: [{
+                        name: 'Visitors',
+                        data: [10, 8, 24, 5, 7, 32, 16, 18, 27, 39, 32, 22]
+                    }]
+                })
+            })
+        </script>
+        <script>
+            $(function() {
+                $('#weekend-graph').highcharts({
+                    chart: {
+                        type: 'column'
+                    },
+                    title: {
+                        text: 'Visitors per Hour on Weekends'
+                    },
+                    xAxis: {
+                        categories: [
+                            '10 AM',
+                            '11 AM',
+                            '12 PM',
+                            '1 PM',
+                            '2 PM',
+                            '3 PM',
+                            '4 PM',
+                            '5 PM',
+                            '6 PM',
+                            '7 PM',
+                            '8 PM',
+                            '9 PM'
+                        ],
+                        crosshair: true,
+                        title: {
+                            text: 'Time of Day'
+                        }
+                    },
+                    yAxis: {
+                        min: 0,
+                        title: {
+                            text: 'Amount of People'
+                        }
+                    },
+                    tooltip: {
+                        headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                        pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                        '<td style="padding:0"><b>{point.y:.1f} people (on average) </b></td></tr>',
+                        footerFormat: '</table>',
+                        shared: true,
+                        useHTML: true
+                    },
+                    legend: {
+                        enabled: false  
+                    },
+                    plotOptions: {
+                        column: {
+                            pointPadding: 0.2,
+                            borderWidth: 0
+                        }
+                    },
+                    series: [{
+                        name: 'Visitors',
+                        data: [30, 33, 50, 48, 25, 28, 27, 24, 46, 66, 73, 70]
+                    }]
+                })
+            })
+        </script>
+
+        <meta charset="utf-8" />        <!--Character encoding-->
+        <meta name="author" content="Eric Liu">
+        <meta name="keywords" content="Butterwood Bake Consortium, Bakery, Cakes, Wedding Cakes">
+        <meta name="description" content="Butterwood Bake Consortium">
+
+        <title> Butterwood Bake Consortium | Visit/Contact </title>
+    </head>
+
+    <body>
+        <div id="container">
+            <div id="top-row">
+                <ul class="norm">
+                    <li><a href="index.html">About Us</a></li>
+                    <li><a href="cakes.html">Cakes</a></li>
+                    <li><img src="images/logo.png" alt="logo"></li>
+                    <li><a href="order.html">Order Online</a></li>
+                    <li><a href="visit_contact.html" class="selected">Visit/Contact</a></li>
+                </ul>
+                <br/>
+                <ul class="mobile">
+                    <li><a href="index.html">About Us</a></li>
+                    <li><a href="cakes.html">Cakes</a></li>
+                    <li><a href="order.html">Order Online</a></li>
+                    <li><a href="visit_contact.html" class="selected">Visit/Contact</a></li>
+                </ul>
+            </div>
+            <div id="content">
+                <div id="visit">
+                    <h3>Visit Us</h3>
+                    <table>
+                        <tr>
+                            <td>
+                                <img src="images/storefront.PNG" alt="front of store">
+                                <br/>
+                                The Exterior of the Store
+                            </td>
+                            <td>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3034.7447288759577!2d-79.95592068434968!3d40.48091205965701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f2f80929711b%3A0x169402af50d86e6c!2sThe+Butterwood+Bake+Consortium!5e0!3m2!1sen!2sus!4v1553397400392" width="480" height="360" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                <br/>
+                                Please use the above map to find us.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div id="weekday-graph"></div>
+                                <br/>
+                                Please use the above graph to see our most crowded times during weekdays.
+                            </td>
+                            <td>
+                                <div id="weekend-graph"></div>
+                                <br/>
+                                Please use the above graph to see our most crowded times during weekends.
+                            </td>
+                        </tr>
+                    </table>
+                </div> 
+                <div id="contact">
+                    <h3>Contact Us</h3>
+                    Please use the below form to contact us. <br/><br/>
+                    <form onsubmit="return validate()" action="mailto:infoneeded@butterwoodBC.com"  method="post" enctype="text/plain">
+                        <label for="name"> Name<font color="red">*</font> <br/></label>
+                        <input type="text" id="name" name="name" placeholder="FirstName LastName" required> <br/><br/>
+                        <label for="zip"> 5-Digit Zip Code <br/></label>
+                        <input type="text" id="zip" name="zip" placeholder="12345"> <br/><br/>
+                        <label for="email"> Email<font color="red">*</font> <br/></label>
+                        <input type="email" id="email" name="email" placeholder="abc@degf.com" required> <br/><br/>
+                        <label for="message"> Message <br/></label>
+                        <textarea rows="10"  cols="50" maxlength="1000" id="message" name="message"></textarea><br/><br/>
+                        <label for="subsribe"> Please indicate if you would like to subscribe to our mailing list <br/></label>
+                        <input type="checkbox" id="update" name="update"> Yes, subscribe! <br/><br/>
+                        <input type="submit" class="button" value="Submit">
+                    </form>
+                </div>
+            </div>
+            <footer>
+                <hr/>
+                <table>
+                    <tr>
+                        <td>
+                            <div id="contact-group">
+                                <h3>CONTACT</h3>
+                                Phone: 412-781-0128 <br/>
+                                Email: <a href="mailto:info@butterwood.com">info@butterwood.com</a>
+                            </div>
+                        </td>
+                        <td>
+                            <div id="social-media-group">
+                                <h3>FOLLOW US</h3>
+                                <a href="https://www.facebook.com/thebutterwoodbakeconsortium?ref=hl" target="_blank"><img src="images/iconmonstr-facebook-4-48.png"></a>
+                                <a href="http://instagram.com/thebutterwoodbakeconsortium" target="_blank"><img src="images/iconmonstr-instagram-14-48.png"></a>
+                            </div>
+                        </td>
+                        <td>
+                            <div id="address-group">
+                                <h3> ADDRESS </h3>
+                                Lawrenceville <br/>
+                                5222 Butler Street <br/>
+                                Pittsburgh, PA 15201
+                            </div>
+                        </td>
+                        <td>
+                            <div id="hours-group">
+                                <h3>HOURS</h3>
+                                Wed-Fri: 12PM - 11PM <br/>
+                                Sat: 10AM - 11PM <br/>
+                                Sun: 10AM - 9PM
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </footer>
+        </div>
+    </body>
+
+</html>
